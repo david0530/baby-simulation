@@ -1,0 +1,128 @@
+<title>Baby Simulator Roadmap</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Nunito+Sans:wght@400;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: one vertical week-by-week spine; course deadlines are filled nodes, my own work is open nodes */
+:root{
+  --bg:#f6f7fb; --surface:#ffffff; --fg:#22263a; --muted:#646a85; --line:#d5d9ea;
+  --accent:#4a5bd4; --due:#d9486b; --now:#1f9d7a;
+  --display:"Fraunces",Georgia,serif; --body:"Nunito Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#151826;--surface:#1e2234;--fg:#e6e8f3;--muted:#9aa0bd;--line:#33384f;--accent:#8c99ff;--due:#ff7f9c;--now:#4fd1a8;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#151826;--surface:#1e2234;--fg:#e6e8f3;--muted:#9aa0bd;--line:#33384f;--accent:#8c99ff;--due:#ff7f9c;--now:#4fd1a8;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:16px/1.55 var(--body)}
+.wrap{max-width:760px;margin:0 auto;padding-inline:16px;padding-block:40px 64px}
+h1{font:600 clamp(28px,5vw,40px)/1.15 var(--display);margin:0 0 8px;text-wrap:balance}
+.lede{color:var(--muted);margin:0 0 20px;max-width:62ch}
+.legend{display:flex;flex-wrap:wrap;gap:16px;font-size:13px;color:var(--muted);margin-bottom:32px}
+.legend span{display:flex;align-items:center;gap:6px}
+.dot{width:12px;height:12px;border-radius:50%;border:2px solid var(--accent);background:var(--surface);flex:none}
+.dot.due{background:var(--due);border-color:var(--due)}
+.dot.now{background:var(--now);border-color:var(--now)}
+ol{list-style:none;margin:0;padding:0;position:relative}
+ol::before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:2px;background:var(--line)}
+li{display:grid;grid-template-columns:12px 1fr;gap:20px;padding-bottom:28px}
+li .dot{margin-top:6px;position:relative}
+.wk{font:500 12px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-variant-numeric:tabular-nums}
+h2{font:600 20px/1.3 var(--display);margin:2px 0 6px}
+li.due h2{color:var(--due)}
+li.now h2{color:var(--now)}
+ul{margin:0;padding-left:18px;min-width:0}
+ul li{display:list-item;padding:0;color:var(--fg)}
+.card{min-width:0}
+.tag{display:inline-block;font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:99px;border:1px solid var(--due);color:var(--due);margin-left:6px;vertical-align:2px}
+.note{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px;margin-top:8px}
+</style>
+<div class="wrap">
+  <h1>Baby Simulator Roadmap</h1>
+  <p class="lede">From the current prototypes (web sim, Blender render, and the "study with me" video cut) to the final project package due December 4.</p>
+  <div class="legend">
+    <span><i class="dot now"></i>Where I am now</span>
+    <span><i class="dot due"></i>Course deliverable</span>
+    <span><i class="dot"></i>My working milestone</span>
+  </div>
+  <ol>
+    <li class="now"><i class="dot now"></i><div class="card">
+      <div class="wk">Week 5 · class Wed Oct 7</div>
+      <h2>Settle design questions</h2>
+      <ul>
+        <li>Decide: multiple choice only, or let parents also type their own response</li>
+        <li>Decide the baby's look: cartoon vs. human-like animation</li>
+        <li>Decide how far players can customize scenarios</li>
+        <li>Check technical limits (free-text parsing, animation effort, browser vs. Blender)</li>
+      </ul></div></li>
+    <li class=""><i class="dot"></i><div class="card">
+      <div class="wk">Week 6 · class Wed Oct 14</div>
+      <h2>Questionnaire + research</h2>
+      <ul>
+        <li>Draft and send the parent questionnaire: scenarios where parents felt confused, and moments where they did a good job</li>
+        <li>Gather evidence: parenting styles, common parenting harms, long-term effects of each style</li>
+      </ul></div></li>
+    <li class="due"><i class="dot due"></i><div class="card">
+      <div class="wk">Week 7 · class Wed Oct 21</div>
+      <h2>Midterm presentation <span class="tag">Due</span></h2>
+      <ul>
+        <li>3-minute talk: problem, concept, demo clip, early questionnaire findings, next steps</li>
+        <li>Complete the "continue, start, pause" midterm reflection</li>
+        <li>Rehearse twice against a timer</li>
+      </ul></div></li>
+    <li class=""><i class="dot"></i><div class="card">
+      <div class="wk">Week 8 · class Wed Oct 28</div>
+      <h2>Build the scenario engine</h2>
+      <ul>
+        <li>Fold midterm feedback into the design</li>
+        <li>For every scenario, write 5 answer choices, one per parenting style</li>
+        <li>Map each choice to developmental factors that go up or down, differing by stage</li>
+        <li>Build the first of the 4 stage versions as a playable care loop</li>
+      </ul></div></li>
+    <li class="due"><i class="dot due"></i><div class="card">
+      <div class="wk">Week 9 · class Wed Nov 4</div>
+      <h2>Test + memo draft 1 <span class="tag">Due</span></h2>
+      <ul>
+        <li>Run 4–6 playtests with parents; record notes and short clips</li>
+        <li>First version of the 500-word project memo</li>
+      </ul></div></li>
+    <li class=""><i class="dot"></i><div class="card">
+      <div class="wk">Nov 5–17 · no class Nov 11</div>
+      <h2>Expand to all 4 stages</h2>
+      <ul>
+        <li>Build the remaining stage versions with their own scenario prompts</li>
+        <li>Fix the top issues from testing</li>
+      </ul></div></li>
+    <li class="due"><i class="dot due"></i><div class="card">
+      <div class="wk">Week 10 · class Wed Nov 18</div>
+      <h2>Iterate + memo draft 2 <span class="tag">Due</span></h2>
+      <ul>
+        <li>Create a scope map and share it in the design journal</li>
+        <li>Add edge cases: twins or siblings (big and small age gaps, kids fighting, trade-offs between children)</li>
+        <li>Add family structures: single parent, two moms, two dads, and how co-parents discuss decisions</li>
+        <li>Second draft of the project memo</li>
+      </ul></div></li>
+    <li class=""><i class="dot"></i><div class="card">
+      <div class="wk">Nov 19 – Dec 1</div>
+      <h2>Final polish</h2>
+      <ul>
+        <li>Final build and video export; organize project assets</li>
+        <li>Draft the cover letter; keep Thanksgiving week light</li>
+      </ul></div></li>
+    <li class="due"><i class="dot due"></i><div class="card">
+      <div class="wk">Week 11 · class Wed Dec 2</div>
+      <h2>Final presentation <span class="tag">Due</span></h2>
+      <ul>
+        <li>Short presentation plus live demo, with a recorded backup video</li>
+        <li>Final draft of the project memo</li>
+      </ul></div></li>
+    <li class="due"><i class="dot due"></i><div class="card">
+      <div class="wk">Fri Dec 4 · 11:59 pm</div>
+      <h2>Submit final materials <span class="tag">Due</span></h2>
+      <ul>
+        <li>Cover letter, project assets (sim, video, Blender files), final reflective memo</li>
+      </ul></div></li>
+    <li class=""><i class="dot"></i><div class="card">
+      <div class="wk">Dec 7–11</div>
+      <h2>Final 1:1 meeting</h2>
+      <ul>
+        <li>20-minute conversation about the work and course participation (scheduled in early November)</li>
+      </ul></div></li>
+  </ol>
+  <p class="note">Dates follow the T550 2026 syllabus; each week is labeled by its Wednesday class.</p>
+</div>

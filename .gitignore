@@ -1,0 +1,8 @@
+.DS_Store
+__pycache__/
+*.blend1
+# large generated render output
+blender/renders/
+blender/overlay_frames/
+# unrelated to this project
+Shake_It_Off_Checkout.pptx

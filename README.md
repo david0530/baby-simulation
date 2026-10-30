@@ -54,9 +54,13 @@ survey: infancy, "A quiet room" (crying at bedtime), and early childhood, "Spill
 more. The analysis is shortened (details sit behind "More detail"), free-text
 responses, the age selector, and the journal are hidden, and nothing is saved. The end
 screen leads to the other scene and back to the survey.
-The hosted copy lives in the portfolio-site repo under `baby-sim/`, where
-`<html data-mode="survey">` turns the mode on. Copy `practice.js`,
-`parenting-model.js`, and `simulator-ui.css` there after changing them.
+
+## Hosted copy
+
+The full simulator is hosted, unlisted, at https://rebeccaxu.page/baby-sim/ from the
+portfolio-site repo's `baby-sim/` folder (`index.html` is this page with a noindex tag;
+`full.html` redirects there). Copy `practice.js`, `parenting-model.js`, and
+`simulator-ui.css` there after changing them.
 
 ## Research and limits
 

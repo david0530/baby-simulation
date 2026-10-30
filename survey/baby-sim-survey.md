@@ -3,7 +3,7 @@
 Format notes for building in Google Forms / Qualtrics:
 - Sections 1–2 are the Introduction and Demo (no questions except one comprehension check).
 - Questions marked *(optional)* should not be required. Everything else is required.
-- Replace `[LIVE DEMO LINK]` with https://rebeccaxu.page/baby-sim/ (the interactive survey demo: one infant and one early-childhood moment; unlisted, not linked from the portfolio). Optionally replace `[DEMO VIDEO LINK]` with a hosted copy of `BS blender demo.mp4` as a fallback.
+- Replace `[LIVE DEMO LINK]` with https://rebeccaxu.page/baby-sim/ (the full interactive simulator; unlisted, not linked from the portfolio). Optionally replace `[DEMO VIDEO LINK]` with a hosted copy of `BS blender demo.mp4` as a fallback.
 - Estimated time: intro/demo ~2 min, questions ~5 min.
 
 ---
@@ -28,20 +28,16 @@ Thank you for taking part. Baby Sim is an early-stage venture founded by a Harva
 
 ## Section 2 — Prototype demonstration (~2 min)
 
-Please try the short interactive demo below before continuing. It opens in a new tab; come back here when you are done.
+Please try the interactive simulator below before continuing. It opens in a new tab; come back here when you are done. One scene takes about 2 minutes.
 
-> **Try the demo: [LIVE DEMO LINK]** (https://rebeccaxu.page/baby-sim/)  
+> **Try the simulator: [LIVE DEMO LINK]** (https://rebeccaxu.page/baby-sim/)  
 > *(Can't open it? Watch the video instead: [DEMO VIDEO LINK])*
 
-Pick one of two moments:
-- **Baby (0–1 year): A quiet room.** The baby cries at bedtime as you move toward the door.
-- **Early childhood (1–3 years): Spilled milk.** A cup tips over at breakfast and the child freezes.
+Choose an age stage, from infancy to adolescence, and pick a scene, for example a baby crying at bedtime or a toddler spilling milk at breakfast. In each scene you choose one of five responses (A–E) three times, then see how the child might experience it and which developmental areas are involved. Try a different response at any point.
 
-In each moment you choose one of five responses (A–E) three times, then see how the child might experience it and which developmental areas are involved. Try a different response at any point.
-
-**Q1. Did you try the demo?** (comprehension check)
-- Yes, both moments
-- Yes, one moment
+**Q1. Did you try the simulator?** (comprehension check)
+- Yes, one scene or more
+- Yes, part of a scene
 - I only watched the video
 - No, I skipped it
 

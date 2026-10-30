@@ -34,8 +34,8 @@ and words or actions. The ordering changes between decisions.
 
 After responding, open an analysis page to see the response pattern, one possible
 inner perspective, seven stage-specific educational factors, a qualitative direction,
-an explanation, and a repair suggestion. Some factors are marked “Not shown” when
-the moment does not illustrate them. Try another response before proceeding.
+an explanation, and a repair suggestion. Only the factors the moment involves are
+listed, with a count of the others. Try another response before proceeding.
 
 Custom responses stay unclassified unless the player explicitly selects an intended
 pattern. The prototype does not interpret free text. A self-selected pattern is
@@ -45,6 +45,18 @@ Completed sessions, analysis snapshots, and written reflections are saved in thi
 browser's local storage and can be downloaded as JSON. Previous-version journal
 entries remain readable. Start over keeps the journal. Changing browsers, clearing
 site data, or changing the server origin changes which journal is available.
+
+## Survey demo
+
+Add `?survey` (or open `survey-demo.html`) to narrow the app to two scenes for the
+survey: infancy, "A quiet room" (crying at bedtime), and early childhood, "Spilled milk"
+(a kitchen accident). Each scene is one exchange, with an option to continue for two
+more. The analysis is shortened (details sit behind "More detail"), free-text
+responses, the age selector, and the journal are hidden, and nothing is saved. The end
+screen leads to the other scene and back to the survey.
+The hosted copy lives in the portfolio-site repo under `baby-sim/`, where
+`<html data-mode="survey">` turns the mode on. Copy `practice.js`,
+`parenting-model.js`, and `simulator-ui.css` there after changing them.
 
 ## Research and limits
 
